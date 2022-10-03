@@ -6,9 +6,9 @@
   }
   
   .home,
-  .services,
-  .products,
-  .sign-up {
+  .board,
+  .myFarm,
+  .about {
     display: flex;
     height: 90vh;
     align-items: center;
