@@ -1,0 +1,47 @@
+.about_headline{
+    object-fit: cover;
+    margin-top: 70px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.about_texthead{
+    object-fit: cover;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about_weatherimg{
+    display: block;
+    object-fit: cover;
+    width: 50%;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.about_textweather{
+    object-fit: cover;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.about_CCTVimg{
+    display: block;
+    object-fit: cover;
+    width: 50%;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.about_textCCTV{
+    object-fit: cover;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+}

@@ -15,4 +15,7 @@
     justify-content: center;
     font-size: 3rem;
   }
-  
+  .weather{
+    height: 150px;
+    width: 100px;
+  }

@@ -1,7 +1,7 @@
 import "./slick-carousel/slick/slick.css";
 import "./slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import A from './img/A.PNG'
+//import A from './img/A.PNG'
 //import React, { Component } from "react";
 
 
@@ -21,7 +21,7 @@ function SlideBanner(){
       <div>
         <Slider {...settings}>
             <div>
-                <img src={A} alt="A"/>
+                <img src="/img/A.PNG" alt="A"/>
             </div>
             <div>
                 <h3>2</h3>
