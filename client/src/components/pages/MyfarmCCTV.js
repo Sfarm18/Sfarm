@@ -1,13 +1,13 @@
 import React from 'react';
 import '../../App.css'
 
-function MyFarm() {
+function MyFarmCCTV() {
     return (
         <>
-            <h1 className="myFarm">MyFarm</h1>
+            <h1 className="myFarmCCTV">MyFarm-CCTV</h1>
         
         </>
     );
 }
 
-export default MyFarm;
+export default MyFarmCCTV;
