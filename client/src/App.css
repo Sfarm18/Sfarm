@@ -7,15 +7,13 @@
   
   .home,
   .board,
-  .myFarm,
+  .myFarmWeather,
+  .myFarmCCTV,
+  .myFarmRecord,
   .about {
     display: flex;
     height: 90vh;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-  }
-  .weather{
-    height: 150px;
-    width: 100px;
   }

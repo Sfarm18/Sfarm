@@ -1,0 +1,47 @@
+.sidebar {
+    background-color: #E8F2EE;
+    height: 200px;
+    width:200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.05rem;
+    position: fixed;
+    top: 35%;
+    margin-left: 10%;
+    z-index: 999;
+  }
+
+  .side-menu {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 0px;
+    list-style: none;
+    text-align: center;
+    width: 50vw;
+    justify-content: end;
+  }
+  
+  .side-item {
+    height: 50px;
+    margin-right: 10px;
+  }
+  
+  .side-links {
+    color: #666666;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+  }
+
+  .side-headline {
+    color: #1A191E;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    height: 100%;
+    font-size: 1.3rem;
+  }
