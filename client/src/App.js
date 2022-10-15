@@ -1,7 +1,6 @@
  import './App.css';
  import Navbar from './components/Navbar'
  import Slidebanner from './components/Slidebanner'
- import Sidebar from './components/Sidebar'
  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
  import Home from './components/pages/Home'
 import MyFarmWeather from './components/pages/MyFarmWeather';
@@ -18,7 +17,6 @@ function App() {
       <Router>
         <Navbar />
         <Slidebanner/>
-        <Sidebar/>
         <Routes>
           <Route path='/' element = {<Home />} />
           <Route path='/myfarm_weather' element = {<MyFarmWeather />} />
