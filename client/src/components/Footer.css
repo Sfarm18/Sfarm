@@ -1,0 +1,26 @@
+.inner {
+    background-color: white;
+    border-top: 1px solid #e5e5e5;
+    padding: 20px 0 50px 0
+  }
+  .info {
+    margin-top: 0px;
+    text-align: center;
+  }
+  .info span {
+    margin-right: 20px;
+    color: #888;
+    font-size: 12px;
+  }
+  .info span:last-child {
+    margin-right: 0;
+  }
+  .copyright {
+    color: #5f5f5f;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 12px;
+  }
+  footer .logo {
+    margin: 30px auto 0;
+  }

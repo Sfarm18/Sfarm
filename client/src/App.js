@@ -10,6 +10,7 @@ import About from './components/pages/About';
 import Board from './components/pages/Board';
 import Login from './components/pages/Login';
 import MyPage from './components/pages/MyPage';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path='/login' element = {<Login />} />
           <Route path='/mypage' element = {<MyPage />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   );
