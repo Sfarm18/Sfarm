@@ -1,10 +1,14 @@
 import React from 'react';
 import '../../App.css'
 import './About.css'
+import Slidebanner from '../Slidebanner'
 
 
 function About() {
+    
     return (
+        <>
+        <Slidebanner />
         <about>
             <div className="about_headline">
                 <h1>About Sfarm</h1>
@@ -33,6 +37,7 @@ function About() {
                 <li2>text2</li2>
             </div>
         </about>
+        </>
     );
 }
 

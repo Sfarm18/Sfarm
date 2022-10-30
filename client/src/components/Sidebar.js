@@ -14,19 +14,19 @@ function Sidebar() {
           <h4 className='side-headline'>MyFarm</h4>
 
           <li className='side-item'>
-            <Link to='/myfarm_weather' className='side-links' onClick={closeMobileMenu}> 
+            <Link to='/myfarm/weather' className='side-links' onClick={closeMobileMenu}> 
               Weather & Forecast
             </Link>
           </li>
           
           <li className='side-item'>
-            <Link to='/myfarm_cctv' className='side-links' onClick={closeMobileMenu}>
+            <Link to='/myfarm/cctv' className='side-links' onClick={closeMobileMenu}>
               CCTV
             </Link>
           </li>
           
           <li className='side-item'>
-            <Link to='/myfarm_record' className='side-links' onClick={closeMobileMenu}>
+            <Link to='/myfarm/record' className='side-links' onClick={closeMobileMenu}>
               Record
             </Link>
           </li>
