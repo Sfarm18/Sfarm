@@ -8,6 +8,7 @@ import Login from './components/pages/Login';
 import MyPage from './components/pages/MyPage';
 import Footer from './components/Footer';
 import MyFarm from './components/pages/MyFarm';
+import Register from './components/pages/Register';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/myfarm/*" element = {<MyFarm />} />
           <Route path="/board" element = {<Board />} />
           <Route path="/about" element = {<About />} />
+          <Route path="/register" element = {<Register/>} />
           <Route path="/login" element = {<Login />} />
           <Route path="/mypage" element = {<MyPage />} />
         </Routes>

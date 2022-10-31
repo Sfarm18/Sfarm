@@ -8,8 +8,6 @@ function Register() {
     return (
         <>
             <SlideBanner/>
-            <h1 className="login">Register</h1>
-
             <AuthTemplate>
                 <AuthForm type='register' />
             </AuthTemplate>
