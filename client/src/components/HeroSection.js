@@ -6,9 +6,7 @@ import './HeroSection.css'
 function HeroSection() {
   return (
     <section className='hero-container'>
-        <h1>Smart farm</h1>
-        <h1>management system</h1>
-        <p>What are you doing?</p>
+        <h1 className='title'>Smart farm</h1>
         <div className="hero-btns">
             <Button 
                 className='addfarm-btns' 

@@ -45,7 +45,7 @@ function Navbar() {
           </li>
           
           <li className='nav-item'>
-            <Link to='/myfarm' className='nav-links' onClick={closeMobileMenu}>
+            <Link to='/myfarm/weather' className='nav-links' onClick={closeMobileMenu}>
               MyFarm
             </Link>
           </li>
