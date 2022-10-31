@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../App.css'
+import SlideBanner from '../Slidebanner';
 
 function MyPage() {
     return (
         <>
-            <h1 className="myPage">MyPage</h1>
+            <SlideBanner/>
+            <h1 className="mypage">MyPage</h1>
         
         </>
     );

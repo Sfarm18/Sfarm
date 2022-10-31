@@ -62,8 +62,8 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-        {button && <Button buttonStyle='btn--outline'>Login</Button>}
-        {button && <Button buttonStyle='btn--inline'>MyPage</Button>}
+        {button && <Button pos = 'login' buttonStyle='btn--outline'>Login</Button>}
+        {button && <Button pos = 'mypage' buttonStyle='btn--primary'>MyPage</Button>}
       </nav>  
     </>
   )

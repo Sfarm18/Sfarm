@@ -7,6 +7,7 @@ const STYLES = ['btn--primary', 'btn--outline']
 const SIZES = ['btn--medium', 'btn--large']
 
 export const Button = ({
+    pos,
     children, 
     type, 
     onClick, 
@@ -21,6 +22,7 @@ export const Button = ({
     ? buttonSize
     :SIZES[0]
 
+    if(pos === 'login'){
     return (
         <Link to='/login' className='btn_mobile'>
             <button
@@ -32,6 +34,20 @@ export const Button = ({
             </button>
         
         </Link>
-        
     )
+    }
+    else if(pos === 'mypage'){
+        return (
+            <Link to='/mypage' className='btn_mobile'>
+                <button
+                className={`btn ${checkButtonStyle} ${checkButtonSize}`}
+                onClick={onClick}
+                type={type}
+                >
+                    {children}
+                </button>
+            
+            </Link>
+        )
+    }
 };
