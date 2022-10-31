@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css'
 import Sidebar from '../Sidebar.js'
 
-function MyFarmCCTV() {
+function CCTV() {
     return (
         <>
             <Sidebar/>
@@ -12,4 +12,4 @@ function MyFarmCCTV() {
     );
 }
 
-export default MyFarmCCTV;
+export default CCTV;

@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css'
 import Sidebar from '../Sidebar.js'
 
-function MyFarmWeather() {
+function Weather() {
     return (
         <>
             <Sidebar/>
@@ -12,4 +12,4 @@ function MyFarmWeather() {
     );
 }
 
-export default MyFarmWeather;
+export default Weather;

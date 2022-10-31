@@ -2,7 +2,7 @@ import React from 'react';
 import '../../App.css'
 import Sidebar from '../Sidebar.js'
 
-function MyFarmRecord() {
+function Record() {
     return (
         <>
             <Sidebar/>
@@ -12,4 +12,4 @@ function MyFarmRecord() {
     );
 }
 
-export default MyFarmRecord;
+export default Record;

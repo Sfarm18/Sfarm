@@ -8,9 +8,6 @@ import Login from './components/pages/Login';
 import MyPage from './components/pages/MyPage';
 import Footer from './components/Footer';
 import MyFarm from './components/pages/MyFarm';
-import Weather from './components/pages/Weather';
-import CCTV from './components/pages/CCTV';
-import Record from './components/pages/Record';
 
 function App() {
   return (
@@ -18,17 +15,12 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
-          <Route path='/' element = {<Home />} />
-          <Route path='/myfarm/*' element = {<MyFarm />}>
-            <Route path='weather' element = {<Weather />} />
-            <Route path='cctv' element = {<CCTV />} />
-            <Route path='record' element = {<Record />} />
-          </Route>
-            
-          <Route path='/board' element = {<Board />} />
-          <Route path='/about' element = {<About />} />
-          <Route path='/login' element = {<Login />} />
-          <Route path='/mypage' element = {<MyPage />} />
+          <Route path="/" element = {<Home />} />
+          <Route path="/myfarm/*" element = {<MyFarm />} />
+          <Route path="/board" element = {<Board />} />
+          <Route path="/about" element = {<About />} />
+          <Route path="/login" element = {<Login />} />
+          <Route path="/mypage" element = {<MyPage />} />
         </Routes>
         <Footer />
       </Router>
