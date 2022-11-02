@@ -2,6 +2,8 @@ import React from 'react';
 import '../App.css'
 import './About.css'
 import Slidebanner from '../components/Slidebanner'
+import W_img from '../asset/images/about_weather.jpg'
+import C_img from '../asset/images/about_CCTV.jpg'
 
 
 function About() {
@@ -20,7 +22,7 @@ function About() {
             </div>
 
             <div>
-                <img className="about_weatherimg" src="C:\Users\User\Desktop\Sfarm\client\src\asset\images\about_weather.jpg" alt="weather"/>
+                <img className="about_weatherimg" src={W_img} alt="weather"/>
             </div>
 
             <div className="about_textweather">
@@ -31,7 +33,7 @@ function About() {
             </div>
 
             <div>
-                <img className="about_CCTVimg" src="/img/about_CCTV.jpg" alt="CCTV"/>
+                <img className="about_CCTVimg" src={C_img} alt="CCTV"/>
             </div>
 
             <div className="about_textCCTV">
