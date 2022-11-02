@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../App.css'
+import '../App.css'
 import './About.css'
-import Slidebanner from '../Slidebanner'
+import Slidebanner from '../components/Slidebanner'
 
 
 function About() {
@@ -9,23 +9,25 @@ function About() {
     return (
         <>
         <Slidebanner />
-        <about>
             <div className="about_headline">
                 <h1>About Sfarm</h1>
             </div>
 
             <div className="about_texthead">
-                <li1>text1</li1><br/>
-                <li2>text2</li2>
+                <ol>
+                <li>text1</li><br/>
+                </ol>
             </div>
 
             <div>
-                <img className="about_weatherimg" src="/img/about_weather.jpg" alt="weather"/>
+                <img className="about_weatherimg" src="C:\Users\User\Desktop\Sfarm\client\src\asset\images\about_weather.jpg" alt="weather"/>
             </div>
 
             <div className="about_textweather">
-                <li1>text1</li1><br/>
-                <li2>text2</li2>
+                <ol>
+                <li>text1</li><br/>
+                <li>text2</li>
+                </ol>
             </div>
 
             <div>
@@ -33,10 +35,12 @@ function About() {
             </div>
 
             <div className="about_textCCTV">
-                <li1>text1</li1><br/>
-                <li2>text2</li2>
+                <ol>
+                <li>text1</li><br/>
+                <li>text2</li>
+                </ol>
             </div>
-        </about>
+    
         </>
     );
 }

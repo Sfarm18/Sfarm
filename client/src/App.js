@@ -1,14 +1,14 @@
  import './App.css';
  import Navbar from './components/Navbar'
  import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
- import Home from './components/pages/Home'
-import About from './components/pages/About';
-import Board from './components/pages/Board';
-import Login from './components/pages/Login';
-import MyPage from './components/pages/MyPage';
+ import Home from './pages/Home'
+import About from './pages/About';
+import Board from './pages/Board';
+import Login from './pages/Login';
+import MyPage from './pages/MyPage';
 import Footer from './components/Footer';
-import MyFarm from './components/pages/MyFarm';
-import Register from './components/pages/Register';
+import MyFarm from './pages/MyFarm';
+import Register from './pages/Register';
 
 function App() {
   return (

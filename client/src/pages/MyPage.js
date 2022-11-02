@@ -1,7 +1,7 @@
 import React from 'react';
-import '../../App.css'
+import '../App.css'
 import styled from 'styled-components';
-import SlideBanner from '../Slidebanner';
+import SlideBanner from '../components/Slidebanner';
 
 const AuthTemplateBlock = styled.div`
   display: flex;

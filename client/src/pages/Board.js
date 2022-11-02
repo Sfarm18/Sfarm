@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../App.css'
-import Slidebanner from '../Slidebanner'
+import '../App.css'
+import Slidebanner from '../components/Slidebanner'
 
 function Board() {
     return (

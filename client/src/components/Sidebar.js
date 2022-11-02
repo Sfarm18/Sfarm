@@ -9,7 +9,7 @@ function Sidebar() {
 
   return (
     <>
-      <sidebar className="sidebar"> 
+      <div className="sidebar"> 
         <ul className={click ? 'side-menu active' : 'side-menu'}>
           <h4 className='side-headline'>MyFarm</h4>
 
@@ -31,7 +31,7 @@ function Sidebar() {
             </Link>
           </li>
         </ul>
-      </sidebar>  
+      </div>  
     </>
   )
 }

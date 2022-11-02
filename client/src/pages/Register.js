@@ -1,8 +1,8 @@
 import React from 'react';
-import '../../App.css'
-import AuthForm from '../AuthForm';
-import AuthTemplate from '../AuthTemplate';
-import SlideBanner from '../Slidebanner';
+import '../App.css'
+import AuthForm from '../components/AuthForm';
+import AuthTemplate from '../components/AuthTemplate';
+import SlideBanner from '../components/Slidebanner';
 
 function Register() {
     return (

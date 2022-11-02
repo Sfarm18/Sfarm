@@ -1,6 +1,6 @@
 import React from 'react';
-import '../../App.css'
-import Sidebar from '../Sidebar.js'
+import '../App.css'
+import Sidebar from '../components/Sidebar.js'
 
 function Weather() {
     return (
