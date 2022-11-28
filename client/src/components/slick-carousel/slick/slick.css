@@ -1,4 +1,13 @@
 /* Slider */
+.slide1{
+    display: block;
+    object-fit: cover;
+    width: 50%;
+    margin: 50px auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
 .slick-slider
 {
     position: relative;

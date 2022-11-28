@@ -1,15 +1,21 @@
+import "./Slidebanner.css";
 import "./slick-carousel/slick/slick.css";
 import "./slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import A from '../asset/images/A.PNG'
+import A1 from '../asset/images/tree2.png'
+import A2 from '../asset/images/tree3.png'
+import A3 from '../asset/images/tree4.png'
+import A4 from '../asset/images/tree5.png'
+import A5 from '../asset/images/tree8.png'
+import A6 from '../asset/images/tree10.png'
 import React from "react";
 
 
 function SlideBanner(){
     const settings = {
         arrows:false,
-        autoplay: true,
-        autoplaySpeed: 2500,
+        autoplay: false,
+        autoplaySpeed: 250,
         dots: true,
         infinite: true,
         speed: 500,
@@ -21,22 +27,22 @@ function SlideBanner(){
       <div>
         <Slider {...settings}>
             <div>
-                <img src={A} alt="A"/>
+                <img className="slide1" src={A1} alt="A1"/>
             </div>
             <div>
-                <h3>2</h3>
+                <img src={A1} alt="A"/>
             </div>
             <div>
-                <h3>3</h3>
+                <img src={A1} alt="A"/>
             </div>
             <div>
-                <h3>4</h3>
+                <img src={A1} alt="A"/>
             </div>
             <div>
-                <h3>5</h3>
+                <img src={A1} alt="A"/>
             </div>
             <div>
-                <h3>6</h3>
+                <img src={A1} alt="A"/>
             </div>
         </Slider>
       </div>
