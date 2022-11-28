@@ -15,6 +15,7 @@ function HeroSection() {
             >
                 Add Farm
             </Button>   
+
             <Button 
                 className='about-btns' 
                 buttonStyle='btn--outline'
