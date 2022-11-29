@@ -27,22 +27,22 @@ function SlideBanner(){
       <div>
         <Slider {...settings}>
             <div>
-                <img className="slide1" src={A1} alt="A1"/>
+                <img className="slide0" src={A1} alt="A1"/>
             </div>
             <div>
-                <img className="slide2" src={A1} alt="A1"/>
+                <img className="slide2" src={A2} alt="A2"/>
             </div>
             <div>
-                <img className="slide1" src={A1} alt="A1"/>
+                <img className="slide3" src={A3} alt="A3"/>
             </div>
             <div>
-                <img className="slide1" src={A1} alt="A1"/>
+                <img className="slide4" src={A4} alt="A4"/>
             </div>
             <div>
-                <img className="slide1" src={A1} alt="A1"/>
+                <img className="slide5" src={A5} alt="A5"/>
             </div>
             <div>
-                <img className="slide1" src={A1} alt="A1"/>
+                <img className="slide6" src={A6} alt="A6"/>
             </div>
         </Slider>
       </div>
