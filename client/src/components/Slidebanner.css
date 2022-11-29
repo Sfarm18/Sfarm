@@ -1,2 +1,12 @@
 .slide1{
+    object-fit: cover;
+    width: 8%;
+    margin-left: 11%;
+    margin-top: 1%;
+} 
+.slide2{
+    object-fit: cover;
+    width: 8%;
+    margin-left: 11%;
+    margin-top: 1%;
 } 

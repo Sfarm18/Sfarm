@@ -30,19 +30,19 @@ function SlideBanner(){
                 <img className="slide1" src={A1} alt="A1"/>
             </div>
             <div>
-                <img src={A1} alt="A"/>
+                <img className="slide2" src={A1} alt="A1"/>
             </div>
             <div>
-                <img src={A1} alt="A"/>
+                <img className="slide1" src={A1} alt="A1"/>
             </div>
             <div>
-                <img src={A1} alt="A"/>
+                <img className="slide1" src={A1} alt="A1"/>
             </div>
             <div>
-                <img src={A1} alt="A"/>
+                <img className="slide1" src={A1} alt="A1"/>
             </div>
             <div>
-                <img src={A1} alt="A"/>
+                <img className="slide1" src={A1} alt="A1"/>
             </div>
         </Slider>
       </div>
