@@ -18,15 +18,27 @@
     justify-content: center;
     font-size: 3rem;
   }
-
-  /* .img1{
-   object-fit: cover;
-   width: 200px;
-   margin-left: 300px;
-  } */
  .img1{
    object-fit: cover;
-   width: 300px;
-   margin-left: 300px;
+   width: 12%;
+   margin-left: 11%;
+   margin-top: -15%;
+  }
+  .img2{
+   object-fit: cover;
+   width: 12%;
+   margin-left: 11%;
+   margin-top: -15%;
+  }
+  .img3{
+   object-fit: cover;
+   width: 12%;
+   margin-left: 11%;
+   margin-top: -15%;
+  }
+  .img4{
+   object-fit: cover;
+   width: 12%;
+   margin-left: 11%;
    margin-top: -15%;
   }
