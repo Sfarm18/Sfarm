@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 
 @Entity
+@Table(name = "member")
 @Getter
 @Builder
 @NoArgsConstructor
-@AllArgsConstructor
 public class MemberEntity {
 
     @Id
@@ -32,6 +32,18 @@ public class MemberEntity {
 
     @Enumerated(EnumType.STRING)
     private MemberAuthority memberAuthority;
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
+    public void setLocation(String location) {
+        this.location = location;
+    }
 
     @Builder
     public MemberEntity(Long id, String userId, String password, String name, String location, MemberAuthority memberAuthority) {
