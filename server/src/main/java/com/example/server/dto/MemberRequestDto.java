@@ -1,5 +1,6 @@
-package com.example.server.entity;
+package com.example.server.dto;
 
+import com.example.server.entity.MemberEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -27,6 +28,7 @@ public class MemberRequestDto {
                 .build();
     }
 
+    // 아이디와 비밀번호가 일치하는지 검증하는 로직
     public UsernamePasswordAuthenticationToken toAuthentication() {
         return new UsernamePasswordAuthenticationToken(userId, password);
     }

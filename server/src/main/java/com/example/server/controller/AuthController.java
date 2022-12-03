@@ -1,10 +1,12 @@
 package com.example.server.controller;
 
+import com.example.server.dto.ApiResult;
 import com.example.server.dto.MemberRequestDto;
 import com.example.server.dto.MemberResponseDto;
 import com.example.server.dto.TokenDto;
 import com.example.server.service.AuthService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,12 +20,16 @@ public class AuthController {
     private final AuthService authService;
 
     @PostMapping("/signup")
-    public ResponseEntity<MemberResponseDto> signup(@RequestBody MemberRequestDto requestDto) {
-        return ResponseEntity.ok(authService.signup(requestDto));
+    public ApiResult<?> signup(@RequestBody MemberRequestDto requestDto) {
+        try {
+            return ApiResult.OK(authService.signup(requestDto));
+        } catch (Exception e) {
+            return ApiResult.ERROR(e, HttpStatus.BAD_REQUEST);
+        }
     }
 
     @PostMapping("/login")
-    public ResponseEntity<TokenDto> login(@RequestBody MemberRequestDto requestDto) {
-        return ResponseEntity.ok(authService.login(requestDto));
+    public ApiResult<?> login(@RequestBody MemberRequestDto requestDto) {
+        return ApiResult.OK(authService.login(requestDto));
     }
 }

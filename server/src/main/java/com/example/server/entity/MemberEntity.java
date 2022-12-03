@@ -1,6 +1,5 @@
 package com.example.server.entity;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -22,8 +21,6 @@ public class MemberEntity {
     private String userId;
 
     @Column(nullable = false)
-
-
     private String password;
 
     @Column(nullable = false)
@@ -46,6 +43,8 @@ public class MemberEntity {
     public void setLocation(String location) {
         this.location = location;
     }
+
+    public void setPassword(String password) { this.password = password; }
 
     @Builder
     public MemberEntity(Long id, String userId, String password, String name, String location, MemberAuthority memberAuthority) {
