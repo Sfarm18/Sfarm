@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/member")
+@RequestMapping("/mypage")
 public class MemberController {
     private final MemberService memberService;
 
@@ -26,6 +26,11 @@ public class MemberController {
     @PostMapping("/name")
     public ApiResult<?> setMemberName(@RequestBody MemberRequestDto request) {
         return ApiResult.OK(memberService.changeMemberName(request.getUserId(), request.getName()));
+    }
+
+    @PostMapping("/location")
+    public ApiResult<?> setMemberLocation(@RequestBody MemberRequestDto request) {
+        return ApiResult.OK(memberService.changeMemberLocation(request.getUserId(), request.getLocation()));
     }
 
     @PostMapping("/password")
