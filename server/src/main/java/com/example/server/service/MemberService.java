@@ -24,7 +24,7 @@ public class MemberService {
 
     // 이름 변경
     @Transactional
-    public MemberResponseDto changeMemberNickname(String userId, String name) {
+    public MemberResponseDto changeMemberName(String userId, String name) {
         MemberEntity memberEntity = memberRepository.findByUserId(userId).orElseThrow(() -> new RuntimeException("로그인 유저 정보가 없습니다"));
         memberEntity.setName(name);
         return MemberResponseDto.of(memberRepository.save(memberEntity));

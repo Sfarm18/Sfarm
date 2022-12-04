@@ -1,10 +1,12 @@
 package com.example.server.controller;
 
+import com.example.server.dto.ApiResult;
 import com.example.server.dto.ChangePasswordRequestDto;
 import com.example.server.dto.MemberRequestDto;
 import com.example.server.dto.MemberResponseDto;
 import com.example.server.service.MemberService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -14,17 +16,16 @@ import org.springframework.web.bind.annotation.*;
 public class MemberController {
     private final MemberService memberService;
 
-    @GetMapping("/me")
-    public ResponseEntity<MemberResponseDto> getMyMemberInfo() {
+    // 마이페이지
+    @GetMapping("/status")
+    public ApiResult<?> getMyMemberInfo() {
         MemberResponseDto myInfoBySecurity = memberService.getMyInfoBySecurity();
-        System.out.println(myInfoBySecurity.getName());
-        return ResponseEntity.ok((myInfoBySecurity));
-        // return ResponseEntity.ok(memberService.getMyInfoBySecurity());
+        return ApiResult.OK(ResponseEntity.ok((myInfoBySecurity)));
     }
 
-    @PostMapping("/nickname")
-    public ResponseEntity<MemberResponseDto> setMemberName(@RequestBody MemberRequestDto request) {
-        return ResponseEntity.ok(memberService.changeMemberNickname(request.getUserId(), request.getName()));
+    @PostMapping("/name")
+    public ApiResult<?> setMemberName(@RequestBody MemberRequestDto request) {
+        return ApiResult.OK(memberService.changeMemberName(request.getUserId(), request.getName()));
     }
 
     @PostMapping("/password")

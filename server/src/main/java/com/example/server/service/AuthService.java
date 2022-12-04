@@ -39,11 +39,7 @@ public class AuthService {
     public TokenDto login(MemberRequestDto requestDto) {
         UsernamePasswordAuthenticationToken authenticationToken = requestDto.toAuthentication();
 
-        log.error("uuuuuuuuuuu");
-
         Authentication authentication = managerBuilder.getObject().authenticate(authenticationToken);
-
-        log.error("ji");
 
         return tokenProvider.generateTokenDto(authentication);
     }
