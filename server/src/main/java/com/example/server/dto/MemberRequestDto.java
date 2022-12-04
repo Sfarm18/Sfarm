@@ -1,5 +1,6 @@
 package com.example.server.dto;
 
+import com.example.server.entity.MemberAuthority;
 import com.example.server.entity.MemberEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -25,6 +26,7 @@ public class MemberRequestDto {
                 .password(passwordEncoder.encode(password))
                 .name(name)
                 .location(location)
+                .memberAuthority(MemberAuthority.ROLE_USER)
                 .build();
     }
 

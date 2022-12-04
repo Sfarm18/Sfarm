@@ -7,8 +7,11 @@ import com.example.server.dto.MemberRequestDto;
 import com.example.server.jwt.TokenProvider;
 import com.example.server.repository.MemberRepository;
 import lombok.RequiredArgsConstructor;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+
 import org.springframework.security.core.Authentication;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -22,6 +25,7 @@ public class AuthService {
     private final MemberRepository memberRepository;
     private final PasswordEncoder passwordEncoder;
     private final TokenProvider tokenProvider;
+    private final Logger log = LoggerFactory.getLogger(this.getClass().getSimpleName());
 
     public MemberResponseDto signup(MemberRequestDto requestDto) {
         if (memberRepository.existsByUserId(requestDto.getUserId())) {
@@ -35,7 +39,11 @@ public class AuthService {
     public TokenDto login(MemberRequestDto requestDto) {
         UsernamePasswordAuthenticationToken authenticationToken = requestDto.toAuthentication();
 
+        log.error("uuuuuuuuuuu");
+
         Authentication authentication = managerBuilder.getObject().authenticate(authenticationToken);
+
+        log.error("ji");
 
         return tokenProvider.generateTokenDto(authentication);
     }
