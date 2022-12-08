@@ -1,13 +1,13 @@
 import React from 'react'
 import { Button } from './Button';
-import './HeroSection.css'
+import './StartingPage.css'
 import Ti1 from '../asset/images/title1.PNG'
 import T1 from '../asset/images/tree1.png'
 import T2 from '../asset/images/tree6.png'
 import T3 from '../asset/images/tree7.png'
 import T4 from '../asset/images/tree9.png'
 
-function HeroSection() {
+function StartingPage() {
   return (
     <section className='hero-container'>
         {/* <h1 className='title'>Smart farm<br/>management system</h1> */}
@@ -40,4 +40,4 @@ function HeroSection() {
   )
 }
 
-export default HeroSection
+export default StartingPage

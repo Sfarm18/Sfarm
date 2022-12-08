@@ -4,16 +4,16 @@ import AuthForm from '../components/AuthForm';
 import AuthTemplate from '../components/AuthTemplate';
 import SlideBanner from '../components/Slidebanner';
 
-function Register() {
+function SignUp() {
     return (
         <>
             <SlideBanner/>
             <AuthTemplate>
-                <AuthForm type='register' />
+                <AuthForm type='signup' />
             </AuthTemplate>
         
         </>
     );
 }
 
-export default Register;
+export default SignUp;

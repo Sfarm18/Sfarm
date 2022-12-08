@@ -25,8 +25,8 @@ function App() {
           <Route path="/myfarm/*" element = {<MyFarm />} />
           <Route path="/board" element = {<Board />} />
           <Route path="/about" element = {<About />} />
-          <Route path="/signup" element = {<SignUp/>} />
-          <Route path="/login" element = {<Login />} />
+          <Route path="/signup" element = {authCtx.isLoggedIn ? <Navigate to='/' /> : <SignUp/>} />
+          <Route path="/login/*" element = {authCtx.isLoggedIn ? <Navigate to='/' /> : <Login />} />
           <Route path="/mypage" element = {!authCtx.isLoggedIn ? <Navigate to='/' /> : <MyPage />} />
         </Routes>
         <Footer />
