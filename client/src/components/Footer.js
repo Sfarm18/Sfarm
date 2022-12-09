@@ -10,9 +10,9 @@ const Footer = () => {
     return (
         <div className="inner"> 
             <div className="info">
-                <span>사업자등록번호 201-81-21515</span>
-                <span>(주)Sfarm 대표이사 이겨레</span>
-                <span>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</span>
+                <span>사업자등록번호 000-00-00000</span>
+                <span>(주)Sfarm 대표이사 정우용</span>
+                <span>TEL : 02) 0000-1111 / FAX : 02) 0000-1111</span>
                 <span>개인정보 책임자 : 이겨레</span>
             </div>
          

@@ -57,15 +57,16 @@ export const AuthContextProvider = (props) => {
     // 로그인을 하는 함수
     const loginHandler = (userId, password) => {
         setIsSuccess(false);
-        console.log(isSuccess);
-        const data = authAction.loginActionHandler(userId, password);
-        data.then((result) => {
+        const response = authAction.loginActionHandler(userId, password);
+        response.then((result) => {
             if (result !== null) {
-                const loginData = result.data;
-                setToken(loginData.accessToken);
-                logoutTimer = setTimeout(logoutHandler, authAction.loginTokenHandler(loginData.accessToken, loginData.tokenExpiresIn));
-                setIsSuccess(true);
-                console.log(isSuccess);
+                //const loginData = result.data;
+                //setToken(loginData.accessToken);
+                //logoutTimer = setTimeout(logoutHandler, authAction.loginTokenHandler(loginData.accessToken, loginData.tokenExpiresIn));
+                //setIsSuccess(true);
+                console.log("성공");
+            } else {
+                console.log("실패!");
             }
         });
     };

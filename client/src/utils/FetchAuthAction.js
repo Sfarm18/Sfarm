@@ -6,7 +6,8 @@ const fetchAuth = async (fetchData) => {
     const data = fetchData.data;
     const header = fetchData.header;
     try {
-        const response = (method === 'get' && (await axios.get(url, header))) ||
+        const response = 
+            (method === 'get' && (await axios.get(url, header))) ||
             (method === 'post' && (await axios.post(url, data, header))) ||
             (method === 'put' && (await axios.put(url, data, header))) ||
             (method === 'delete' && (await axios.delete(url, header)));
@@ -16,7 +17,7 @@ const fetchAuth = async (fetchData) => {
             return null;
         }
         if (!response) {
-            alert("false!");
+            console.log("fail")
             return null;
         }
         return response;
@@ -26,12 +27,12 @@ const fetchAuth = async (fetchData) => {
             const serverError = err;
             if (serverError && serverError.response) {
                 console.log(serverError.response.data);
-                alert("failed!");
+                alert("fail");
                 return null;
             }
         }
         console.log(err);
-        alert("failed!");
+        alert("fail");
         return null;
     }
 };
