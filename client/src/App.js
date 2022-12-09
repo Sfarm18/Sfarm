@@ -2,6 +2,7 @@
  import Navbar from './components/Navbar'
  import { Routes, Route, Navigate } from 'react-router-dom';
  import React, { useContext } from 'react';
+ import Layout from './components/Layout';
  import Home from './pages/Home'
 import About from './pages/About';
 import Board from './pages/Board';
@@ -20,15 +21,17 @@ function App() {
     <>
     
         <Navbar />
-        <Routes>
-          <Route path="/" element = {<Home />} />
-          <Route path="/myfarm/*" element = {<MyFarm />} />
-          <Route path="/board" element = {<Board />} />
-          <Route path="/about" element = {<About />} />
-          <Route path="/signup" element = {authCtx.isLoggedIn ? <Navigate to='/' /> : <SignUp/>} />
-          <Route path="/login/*" element = {authCtx.isLoggedIn ? <Navigate to='/' /> : <Login />} />
-          <Route path="/mypage" element = {!authCtx.isLoggedIn ? <Navigate to='/' /> : <MyPage />} />
-        </Routes>
+        <Layout>
+          <Routes>
+            <Route path="/" element = {<Home />} />
+            <Route path="/myfarm/*" element = {<MyFarm />} />
+            <Route path="/board" element = {<Board />} />
+            <Route path="/about" element = {<About />} />
+            <Route path="/signup" element = {authCtx.isLoggedIn ? <Navigate to='/' /> : <SignUp/>} />
+            <Route path="/login" element = {authCtx.isLoggedIn ? <Navigate to='/' /> : <Login />} />
+            <Route path="/mypage" element = {!authCtx.isLoggedIn ? <Navigate to='/' /> : <MyPage />} />
+          </Routes>
+        </Layout>
         <Footer />
     </>
   );

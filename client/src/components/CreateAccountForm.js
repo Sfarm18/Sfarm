@@ -114,7 +114,7 @@ const CreateAccountForm = () => {
             <ButtonWithMarinTop fullWidth>회원가입</ButtonWithMarinTop>
           </form>
           <Footer>
-            <Link to="/signup">로그인</Link>
+            <Link to="/login">로그인</Link>
           </Footer>
         </AuthFormBlock>
       );
