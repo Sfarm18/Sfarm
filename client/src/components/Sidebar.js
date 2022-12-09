@@ -11,7 +11,7 @@ function Sidebar() {
     <>
       <div className="sidebar"> 
         <ul className={click ? 'side-menu active' : 'side-menu'}>
-          <h4 className='side-headline'>MyFarm</h4>
+          <h4 className='side-headline'>Categories</h4>
 
           <li className='side-item'>
             <Link to='/myfarm/weather' className='side-links' onClick={closeMobileMenu}> 
