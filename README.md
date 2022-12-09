@@ -53,9 +53,22 @@ use sfarm;
     
         
     // server
-
+    -java 11.0.13
+    -jdk 11.0.13
+    - spring-boot 2.7.5
+    - mysql 8.0.28
+    - jsonwebtoken 0.11.2
+    - lombok
+    - `mysql` database > jdbc
+    - `logback` logger
+    - spring-boot-starter-data-jpa
+    - spring-boot-starter-security
+    - spring-boot-starter-web
     
     
     //model
-
+    python==3.8
+    tensorflow-gpu==2.10.1
+    keras==2.10.0
+    opencv-python==4.6.0.66
     ```
