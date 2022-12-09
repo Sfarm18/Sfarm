@@ -12,6 +12,8 @@ function Weather() {
 
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}`;
  
+    // const Comment = 
+
     const Time = (i) => {
         let now = new Date();
         let GetTime = new Date(now.setDate(now.getDate() + i));
@@ -138,7 +140,7 @@ const AppWrap = styled.div`
   width: 100vw;
   height: 300vh;
   .appContentWrap {
-    margin-top:13%;
+    margin-top:3%;
     left: 50%;
     top: 120%;
     transform: translate(-50%, -50%);
