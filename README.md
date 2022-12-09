@@ -30,3 +30,32 @@ create database sfarm;
 use sfarm;
 ```
 
+
+### api server
+*  의존성
+      ```
+    // client
+    "node.js": "^8.15.0",
+    "axios": "^1.1.3",
+    "date-fns": "^2.29.3",
+    "http-proxy-middleware": "^2.0.6",
+    "moment": "^2.29.4",
+    "node-sass": "^7.0.3",
+    "react": "^18.2.0",
+    "react-calendar": "^3.9.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.1",
+    "react-scripts": "5.0.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^5.3.6",
+    "web-vitals": "^2.1.4"
+    
+        
+    // server
+
+    
+    
+    //model
+
+    ```
