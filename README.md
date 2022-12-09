@@ -4,7 +4,7 @@
 |이겨레| [Lee-Gyeore] (https://github.com/Lee-Gyeore) |
 |정우용| [Jung-kr] (https://github.com/leejeongeun0) |   
 
-### 개요
+## 개요
 해당 서비스, 스마트 농장 관리 시스템은 AI 기반 농장 감시를 제공하고, 지역 별 날씨에 맞는 정보를 제공해  농장 관리를 도와주는 웹 서비스 이다.
 
 1. 학습된 모델을 이용하여 유해 조수 및 사람을 감시한다. 사용자가 설치한 CCTV 영상을 받아와 실시간으로 프레임 단위 분석을 수행한다.  감시 중 학습된 유해조수 또는 사람이 발견되면 해당 영상을 녹화하고 기록해놓는다. 녹화된 영상은 유해 조수 피해 보상 시 활용할 수 있다. 발견 기록을 활용하여 유해 조수 퇴치 방안을 강구할 수 있다.
@@ -71,4 +71,11 @@ use sfarm;
     tensorflow-gpu==2.10.1
     keras==2.10.0
     opencv-python==4.6.0.66
+    ```
+* 실행방법
+    ```
+    cd server
+    npm i
+    cd server/celery
+    pip install -r requirements.txt
     ```
