@@ -1,9 +1,11 @@
 .appContentWrap{
+    margin-top: 20%;
     margin-bottom: 10%;
     padding-left: 30%;
     width: 800px;
     padding-top: 50px;
     padding-bottom:300px;
+    align-items: center;
 }
 .head{
     width: 600px;

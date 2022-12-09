@@ -47,7 +47,7 @@ function Weather() {
             <Sidebar/>
             <AppWrap>
                 <div className="appContentWrap">
-                <h1 className='head'>날씨예보</h1>
+                <h1 className='head'>날씨예보(부산)</h1>
                 
 
                 {Object.keys(result).length !== 0 && (
@@ -140,7 +140,6 @@ const AppWrap = styled.div`
   width: 100vw;
   height: 300vh;
   .appContentWrap {
-    margin-top:3%;
     left: 50%;
     top: 120%;
     transform: translate(-50%, -50%);
