@@ -79,3 +79,27 @@ use sfarm;
     cd server/celery
     pip install -r requirements.txt
     ```
+
+## Installation
+### 1, 원격 Git 저장소 복제
+```
+$ git clone https://github.com/Sfarm18/Sfarm.git
+```
+
+### 2. 리액트 npm 패키지 설치 및 빌드
+```
+$ cd client
+client$ npm install
+client$ npm start
+```
+
+### 3. 스프링부트 gradle 빌드
+```
+$ cd server
+server$ ./gradlew build
+```
+
+### 4. 파이썬 패키지 설치
+```
+pip install -r requirements.txt
+```
