@@ -12,7 +12,16 @@ function Weather() {
 
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}`;
  
-    // const Comment = 
+    const Comment = (t,w) => {
+        if(w===800){
+            if(t<10)
+                return '굿'
+        }
+        else if(t>=10){
+            return 'd'
+        }
+
+    }
 
     const Time = (i) => {
         let now = new Date();
@@ -48,6 +57,7 @@ function Weather() {
             <AppWrap>
                 <div className="appContentWrap">
                 <h1 className='head'>날씨예보(부산)</h1>
+                <h3>작물명: 복숭아</h3>
                 
 
                 {Object.keys(result).length !== 0 && (
@@ -61,8 +71,8 @@ function Weather() {
                             {Math.round((result.data.list[0].main.temp - 273.15) * 10) / 10}°C/  
                             {Math.round((result.data.list[4].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">큰 비가 예상되오니 비닐하우스 정비 바람</div>
-                        <div className="comment">큰 비가 예상되오니 배수구 정비 바람</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[4].main.temp - 273.15) * 10)/10), result.data.list[4].weather[0].id)}</div>
                     </ResultWrap>
                 )}
 
@@ -77,8 +87,8 @@ function Weather() {
                         {Math.round((result.data.list[8].main.temp - 273.15) * 10) / 10}°C/  
                             {Math.round((result.data.list[12].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">큰 비가 예상되오니 비닐하우스 정비 바람</div>
-                        <div className="comment">큰 비가 예상되오니 배수구 정비 바람</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[8].main.temp - 273.15) * 10)/10), result.data.list[8].weather[0].id)}</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[12].main.temp - 273.15) * 10)/10), result.data.list[12].weather[0].id)}</div>
                     </ResultWrap>
                 )}
 
@@ -93,8 +103,8 @@ function Weather() {
                         {Math.round((result.data.list[16].main.temp - 273.15) * 10) / 10}°C/  
                             {Math.round((result.data.list[20].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">큰 비가 예상되오니 비닐하우스 정비 바람</div>
-                        <div className="comment">큰 비가 예상되오니 배수구 정비 바람</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[16].main.temp - 273.15) * 10)/10), result.data.list[16].weather[0].id)}</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[20].main.temp - 273.15) * 10)/10), result.data.list[20].weather[0].id)}</div>
                     </ResultWrap>
                 )}
 
@@ -109,8 +119,8 @@ function Weather() {
                         {Math.round((result.data.list[24].main.temp - 273.15) * 10) / 10}°C/  
                             {Math.round((result.data.list[28].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">큰 비가 예상되오니 비닐하우스 정비 바람</div>
-                        <div className="comment">큰 비가 예상되오니 배수구 정비 바람</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[24].main.temp - 273.15) * 10)/10), result.data.list[24].weather[0].id)}</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[28].main.temp - 273.15) * 10)/10), result.data.list[28].weather[0].id)}</div>
                     </ResultWrap>
                 )}                
 
@@ -125,8 +135,8 @@ function Weather() {
                         {Math.round((result.data.list[32].main.temp - 273.15) * 10) / 10}°C/  
                             {Math.round((result.data.list[36].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">큰 비가 예상되오니 비닐하우스 정비 바람</div>
-                        <div className="comment">큰 비가 예상되오니 배수구 정비 바람</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
+                        <div className="comment">{Comment((Math.round((result.data.list[4].main.temp - 273.15) * 10)/10), result.data.list[4].weather[0].id)}</div>
                     </ResultWrap>
                 )} 
                 </div>
