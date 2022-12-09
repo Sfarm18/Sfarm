@@ -15,8 +15,8 @@ import React from "react";
 function SlideBanner(){
     const settings = {
         arrows:false,
-        autoplay: false,
-        autoplaySpeed: 3000,
+        autoplay: true,
+        autoplaySpeed: 2700,
         dots: true,
         infinite: true,
         speed: 500,
@@ -48,6 +48,7 @@ function SlideBanner(){
                 <img className="slide5" src={A5} alt="A5"/>
             </div>
             <div>
+                <img className="txt0" src={tx} alt="tx"/>
                 <img className="slide6" src={A6} alt="A6"/>
             </div>
         </Slider>
