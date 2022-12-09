@@ -86,8 +86,8 @@ function Weather() {
             <Sidebar/>
             <AppWrap>
                 <div className="appContentWrap">
-                <h1 className='head'>날씨예보(부산)</h1>
-                <h3>작물명: 복숭아</h3>
+                <h1 className='head'>날씨예보({location})</h1>
+                <h3>작물: 복숭아</h3>
                 
 
                 {Object.keys(result).length !== 0 && (
@@ -195,12 +195,12 @@ function Weather() {
 
 const AppWrap = styled.div`
   width: 100vw;
-  height: 300vh;
+  height: 230vh;
   .appContentWrap {
     left: 50%;
     top: 120%;
     height:165%;
-    margin-top:7%;
+    margin-top:5%;
     transform: translate(-50%, -50%);
     position: absolute;
     padding: 20px;
