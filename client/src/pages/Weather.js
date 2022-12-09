@@ -11,11 +11,18 @@ function Weather() {
     const API_KEY = process.env.REACT_APP_WEATHER_KEY; // 각자 개인의 API KEY를 발급받아 사용해주세요. 
 
     const url = `https://api.openweathermap.org/data/2.5/forecast?q=${location}&appid=${API_KEY}`;
- 
+    
+    // 12월 코멘트
     const Comment = (t,w) => {
-        if(w===800){
-            if(t<10)
-                return '굿'
+        if(w-900>=0&&w-900<=6){
+            return '위험합니다 농사로 행동 지침에 따라주세요.'
+        }
+        else if(w-800>=0&&w-800<=4){
+            if(t<-15)
+                return '2시간 이상 -15°C 이하 유지 시 동해 발생 위험.'
+            else if(t<0)
+                return '땅이 얼 수도 있습니다. 관수를 멈춰주세요.'
+            else return '위험 요인 없습니다. 땅이 얼기 전까지 충분히 관수 해 주세요.'
         }
         else if(t>=10){
             return 'd'
