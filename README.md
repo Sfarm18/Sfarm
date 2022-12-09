@@ -21,7 +21,7 @@
 ## 의존성, 설치방법
 * 학습 시 사용된 이미지는 올리지 않음
 * .env파일을 client 폴더에 생성 후 key 값 넣기 (https://openweathermap.org 회원가입 후 키 발급)
-### 이미지 삽입 예정
+![weatherapi](https://user-images.githubusercontent.com/81340804/206709130-9a03ba8e-feae-4e0b-acd3-c0632e473fbe.png)
 
 * mysql 설치 후 Sfarm\server\src\main\resources\application.yml에 username, password 입력 
 * MySQL DB 및 사용자 생성
