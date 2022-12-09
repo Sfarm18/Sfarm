@@ -142,7 +142,7 @@ const AppWrap = styled.div`
   .appContentWrap {
     left: 50%;
     top: 120%;
-    height:200%;
+    height:165%;
     margin-top:7%;
     transform: translate(-50%, -50%);
     position: absolute;
