@@ -42,7 +42,13 @@ function Weather() {
         else if(w>=500 && w<=531){  //비
             return '배수로를 점검하세요.'
         }
-
+        else if(w>=300 && w<=321){   //drizzle
+            return '배수로를 점검하세요.'
+        }
+        else if(w>=200 && w<=232){      //천둥번개
+            if(t<-15)
+                return '※낙뢰 주의※  외출을 삼가세요  2시간 이상 -15°C 이하 유지 시 동해 발생 위험.'
+            else return '※낙뢰 주의※  외출을 삼가세요.'
         }
 
     }
