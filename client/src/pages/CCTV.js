@@ -29,7 +29,6 @@ function CCTV() {
         <>
             <div className='container'>
                 <h1 className='head'>농장 CCTV</h1>
-                <div className='text'>1번 카메라</div>
                 <video className='CCTV' ref={videoRef}></video>
             </div>
         </>

@@ -64,21 +64,15 @@ const LoginForm = () => {
     const authCtx = useContext(AuthContext);
     const userIdInputRef = useRef(null);
     const passwordInputRef = useRef(null);
-    
-    const [isLoading, setIsLoading] = useState(false);
-    
 
-    const submitHandler = async (event) => {
+    const submitHandler = (event) => {
         event.preventDefault();
         const enteredUserId = userIdInputRef.current.value;
         const enteredPassword = passwordInputRef.current.value;
-
-        setIsLoading(true);
         authCtx.login(enteredUserId, enteredPassword);
 
-        setIsLoading(false);
         if (authCtx.isSuccess) {
-            navigate("/", { replace: true });
+            return navigate("/", { replace: true });
         }
     };
 
