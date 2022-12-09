@@ -8,7 +8,7 @@ import A3 from '../asset/images/slidebar3.PNG'
 import A4 from '../asset/images/slidebar4.PNG'
 import A5 from '../asset/images/slidebar5.PNG'
 import A6 from '../asset/images/slidebar6.PNG'
-import tx from '../asset/images/sbtxt.png'
+import tx from '../asset/images/slitxt.png'
 import React from "react";
 
 
@@ -32,6 +32,7 @@ function SlideBanner(){
                 <img className="slide0" src={A1} alt="A1"/>
             </div>
             <div>
+                <img className="txt0" src={tx} alt="tx"/>
                 <img className="slide2" src={A2} alt="A2"/>
             </div>
             <div>
