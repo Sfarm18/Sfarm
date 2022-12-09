@@ -12,7 +12,7 @@ function StartingPage() {
     <section className='hero-container'>
         {/* <h1 className='title'>Smart farm<br/>management system</h1> */}
         <img className="title1" src={Ti1} alt="Ti1"/>
-        <h3 className="explain">스마트 농장 관리 시스템<br/>농장을 추가해 시작해보세요!</h3>
+        <h3 className="explain">스마트 농장 관리 시스템<br/>농장을 추가하고 시작해보세요!</h3>
 
         <img className="img1" src={T1} alt="T1"/>
         <img className="img2" src={T2} alt="T2"/>
