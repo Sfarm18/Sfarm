@@ -40,6 +40,7 @@ function SlideBanner(){
                 <img className="slide3" src={A3} alt="A3"/>
             </div>
             <div>
+                <img className="txt0" src={tx} alt="tx"/>
                 <img className="slide4" src={A4} alt="A4"/>
             </div>
             <div>
