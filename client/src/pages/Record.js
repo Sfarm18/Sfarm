@@ -12,12 +12,10 @@ function Record() {
         "08-11-2022"
       ];
 
-    
-
     return (
         <>
             <Sidebar/>
-            <Calendar
+            <Calendar 
                 onChange={onChange}
                 value={value}
                 locale="en-EN"
@@ -27,8 +25,9 @@ function Record() {
                     }
                 }}
             />
+            <div className="rectxt"><h2>record</h2></div>
+            <div className="txt">-01:23 멧돼지 출몰<br/>-04:56 고라니 출몰</div>
 
-            
 
         </>
     );
