@@ -44,6 +44,7 @@ function SlideBanner(){
                 <img className="slide4" src={A4} alt="A4"/>
             </div>
             <div>
+                <img className="txt0" src={tx} alt="tx"/>
                 <img className="slide5" src={A5} alt="A5"/>
             </div>
             <div>
