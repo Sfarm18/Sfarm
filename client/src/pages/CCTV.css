@@ -2,10 +2,11 @@
     padding-left: 32%;
     width: 800px;
     padding-top: 5%;
-    padding-bottom:300px;
+    padding-bottom:150px;
 }
 .head{
     width: 600px;
+    font-size: 40px;
 }
 .text{
     width: 600px;

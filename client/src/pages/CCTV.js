@@ -28,7 +28,7 @@ function CCTV() {
     return (
         <>
             <div className='container'>
-                <h1 className='head'>농장 CCTV</h1>
+                <h1 className='head'>농장 CCTV<br/><br/></h1>
                 <video className='CCTV' ref={videoRef}></video>
             </div>
         </>
