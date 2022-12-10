@@ -199,7 +199,7 @@ function Weather() {
 
 const AppWrap = styled.div`
   width: 100vw;
-  height: 230vh;
+  height: 212vh;
   .appContentWrap {
     left: 50%;
     top: 120%;
