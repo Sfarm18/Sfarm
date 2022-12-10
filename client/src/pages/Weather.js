@@ -19,23 +19,23 @@ function Weather() {
             return '※위험합니다 농사로 행동 지침에 따라주세요.'
         }
         else if(w>=800 && w<=804){ // 맑거나 구름
-            if(t<-15)
-                return '※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※'
-            else if(t<0)
-                return '땅이 얼 수도 있습니다. 관수를 멈춰주세요.'
-            else return '위험 요인 없습니다. 땅이 얼기 전까지 충분히 관수 해 주세요.'
+            if(t<-15){
+                return '※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※'}
+            else if(t<0){
+                return '땅이 얼 수도 있습니다. 관수를 멈춰주세요.'}
+            else {return '위험 요인 없습니다. 땅이 얼기 전까지 충분히 관수 해 주세요.'}
         }
         else if(w===602 || w===6222){   //폭설
-            if(t<-15)
-                return '※폭설 주의※   ※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※'
-            else
-                return '※폭설 주의※   비닐하우스 등 구조물 상태 점검 하세요.'
+            if(t<-15){
+                return '※폭설 주의※   ※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※'}
+            else{
+                return '※폭설 주의※   비닐하우스 등 구조물 상태 점검 하세요.'}
         }
         else if(w>=600 && w<622){   //눈
-            if(t<-15)
-                return '※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※ 적설량 확인해 주세요.'
-            else
-                return '적설량 확인해 주세요. '
+            if(t<-15){
+                return '※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※ 적설량 확인해 주세요.'}
+            else{
+                return '적설량 확인해 주세요. '}
         }
         else if(w===502 || w===503 || w===504 || w===522){  //폭우
             return '※폭우 주의※   배수로를 점검하세요.'
@@ -47,9 +47,9 @@ function Weather() {
             return '배수로를 점검하세요.'
         }
         else if(w>=200 && w<=232){      //천둥번개
-            if(t<-15)
-                return '※낙뢰 주의※  외출을 삼가세요  ※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※'
-            else return '※낙뢰 주의※  외출을 삼가세요.'
+            if(t<-15){
+                return '※낙뢰 주의※  외출을 삼가세요  ※ 2시간 이상 -15°C 이하 유지 시 동해 발생 위험. ※'}
+            else{ return '※낙뢰 주의※  외출을 삼가세요.'}
         }
 
     }
@@ -174,13 +174,13 @@ function Weather() {
                     </ResultWrap>
                 )} 
 
-                <h1 className="explain"><br/><br/>겨울 주의 사항</h1>
+                <h1 className="explain"><br/><br/>-겨울철 주의 사항-</h1>
 
                 <h3 className="explain"><br/>※월동 준비를 위해 다음과 같이 관수해 주세요.(땅이 얼면 관수 중지)</h3>
                 <h5 className="explain2">＊사질토 4일 간격 20mm, 양토 7일 간격 30mm, 점질토 9일 간격 35mm 관수＊</h5>
 
                 <h3 className="explain"><br/><br/>※-15°C 이하에서 2시간 이상 지속 시 동해 발생 위험이 있습니다.</h3>
-                <h5 className="explain2"> ＊80-100cm 부위까지 볏짚이나 부직포로 피복하여 보온 처리＊<br/>
+                <h5 className="explain2"> ＊80cm - 100cm 부위까지 볏짚이나 부직포로 피복하여 보온 처리＊<br/>
                 ＊방풍림 또는 방풍망 설치＊</h5>
 
                 <h3 className="explain"><br/><br/>※사후 관리</h3>
