@@ -88,7 +88,7 @@ function Weather() {
             <AppWrap>
                 <div className="appContentWrap">
                 <h1 className='head'>{location} 날씨예보</h1>
-                <div className='crop'>작물: 복숭아</div>
+                <div className='crop'>&nbsp;작물: 복숭아</div>
                 
 
                 {Object.keys(result).length !== 0 && (
@@ -142,16 +142,16 @@ function Weather() {
                 {Object.keys(result).length !== 0 && (
                     <ResultWrap>
                         <div className="time">{Time(3)}</div>
-                        <div className="sky">
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[24].weather[0].icon+".png"} alt="profile"/>
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[28].weather[0].icon+".png"} alt="profile"/>
-                        </div>
                         <div className="temperature">
-                        {Math.round((result.data.list[24].main.temp - 273.15) * 10) / 10}°C/  
+                            &nbsp;오전
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[24].weather[0].icon+".png"} alt="profile"/>
+                            {Math.round((result.data.list[24].main.temp - 273.15) * 10) / 10}°C
+                            &nbsp;&nbsp;&nbsp;오후 
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[28].weather[0].icon+".png"} alt="profile"/>
                             {Math.round((result.data.list[28].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">{Comment((Math.round((result.data.list[24].main.temp - 273.15) * 10)/10), result.data.list[24].weather[0].id)}</div>
-                        <div className="comment">{Comment((Math.round((result.data.list[28].main.temp - 273.15) * 10)/10), result.data.list[28].weather[0].id)}</div>
+                        <div className="comment">오전: {Comment((Math.round((result.data.list[24].main.temp - 273.15) * 10)/10), result.data.list[24].weather[0].id)}</div>
+                        <div className="comment">오후: {Comment((Math.round((result.data.list[28].main.temp - 273.15) * 10)/10), result.data.list[28].weather[0].id)}</div>
                     </ResultWrap>
                 )}                
 
@@ -159,32 +159,35 @@ function Weather() {
                     <ResultWrap>
                         <div className="time">{Time(4)}</div>
                         <div className="sky">
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[32].weather[0].icon+".png"} alt="profile"/>
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[36].weather[0].icon+".png"} alt="profile"/>
+                            
                         </div>
                         <div className="temperature">
-                        {Math.round((result.data.list[32].main.temp - 273.15) * 10) / 10}°C/  
+                            &nbsp;오전
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[32].weather[0].icon+".png"} alt="profile"/>
+                            {Math.round((result.data.list[32].main.temp - 273.15) * 10) / 10}°C
+                            &nbsp;&nbsp;&nbsp;오후 
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[36].weather[0].icon+".png"} alt="profile"/>
                             {Math.round((result.data.list[36].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">{Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
-                        <div className="comment">{Comment((Math.round((result.data.list[4].main.temp - 273.15) * 10)/10), result.data.list[4].weather[0].id)}</div>
+                        <div className="comment">오전: {Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
+                        <div className="comment">오후: {Comment((Math.round((result.data.list[4].main.temp - 273.15) * 10)/10), result.data.list[4].weather[0].id)}</div>
                     </ResultWrap>
                 )} 
 
-                <h1 className="explain"><br/><br/>주의 사항</h1>
+                <h1 className="explain"><br/><br/>겨울 주의 사항</h1>
 
                 <h3 className="explain"><br/>※월동 준비를 위해 다음과 같이 관수해 주세요.(땅이 얼면 관수 중지)</h3>
-                <h4 className="explain">＊사질토 4일 간격 20mm, 양토 7일 간격 30mm, 점질토 9일 간격 35mm 관수＊</h4>
+                <h5 className="explain2">＊사질토 4일 간격 20mm, 양토 7일 간격 30mm, 점질토 9일 간격 35mm 관수＊</h5>
 
                 <h3 className="explain"><br/><br/>※-15°C 이하에서 2시간 이상 지속 시 동해 발생 위험이 있습니다.</h3>
-                <h4 className="explain"> ＊80-100cm 부위까지 볏짚이나 부직포로 피복하여 보온 처리＊<br/>
-                ＊방풍림 또는 방풍망 설치＊</h4>
+                <h5 className="explain2"> ＊80-100cm 부위까지 볏짚이나 부직포로 피복하여 보온 처리＊<br/>
+                ＊방풍림 또는 방풍망 설치＊</h5>
 
                 <h3 className="explain"><br/><br/>※사후 관리</h3>
-                <h4 className="explain">＊동해 피해 받은 나무는 터진 부분을 묶어 건조하지 않게 관리＊<br/>
+                <h5 className="explain2">＊동해 피해 받은 나무는 터진 부분을 묶어 건조하지 않게 관리＊<br/>
                 ＊강전정을 실시하여 결실량을 줄이고 봄철 건조 시에 관수 철저히 해 수세회복에 노력＊<br/>
                 ＊수세가 떨어졌을 때 발아 직전에 석회유황합제 살포＊
-                </h4>
+                </h5>
 
 
                 </div>
