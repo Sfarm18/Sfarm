@@ -23,3 +23,6 @@ div.temperature{
     color: #8D8C8F;
     text-align: center;
 }
+.temperature{
+    font-size: 400px;
+}
