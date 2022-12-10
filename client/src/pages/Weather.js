@@ -102,40 +102,40 @@ function Weather() {
                             <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[4].weather[0].icon+".png"} alt="profile"/>
                             {Math.round((result.data.list[4].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">{Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
-                        <div className="comment">{Comment((Math.round((result.data.list[4].main.temp - 273.15) * 10)/10), result.data.list[4].weather[0].id)}</div>
+                        <div className="comment">오전: {Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
+                        <div className="comment">오후: {Comment((Math.round((result.data.list[4].main.temp - 273.15) * 10)/10), result.data.list[4].weather[0].id)}</div>
                     </ResultWrap>
                 )}
 
                 {Object.keys(result).length !== 0 && (
                     <ResultWrap>
                         <div className="time">{Time(1)}</div>
-                        <div className="sky">
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[8].weather[0].icon+".png"} alt="profile"/>
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[12].weather[0].icon+".png"} alt="profile"/>
-                        </div>
                         <div className="temperature">
-                        {Math.round((result.data.list[8].main.temp - 273.15) * 10) / 10}°C/  
+                            &nbsp;오전
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[8].weather[0].icon+".png"} alt="profile"/>
+                            {Math.round((result.data.list[8].main.temp - 273.15) * 10) / 10}°C
+                            &nbsp;&nbsp;&nbsp;오후 
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[12].weather[0].icon+".png"} alt="profile"/>
                             {Math.round((result.data.list[12].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">{Comment((Math.round((result.data.list[8].main.temp - 273.15) * 10)/10), result.data.list[8].weather[0].id)}</div>
-                        <div className="comment">{Comment((Math.round((result.data.list[12].main.temp - 273.15) * 10)/10), result.data.list[12].weather[0].id)}</div>
+                        <div className="comment">오전: {Comment((Math.round((result.data.list[8].main.temp - 273.15) * 10)/10), result.data.list[8].weather[0].id)}</div>
+                        <div className="comment">오후: {Comment((Math.round((result.data.list[12].main.temp - 273.15) * 10)/10), result.data.list[12].weather[0].id)}</div>
                     </ResultWrap>
                 )}
 
                 {Object.keys(result).length !== 0 && (
                     <ResultWrap>
                         <div className="time">{Time(2)}</div>
-                        <div className="sky">
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[16].weather[0].icon+".png"} alt="profile"/>
-                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[20].weather[0].icon+".png"} alt="profile"/>
-                        </div>
                         <div className="temperature">
-                        {Math.round((result.data.list[16].main.temp - 273.15) * 10) / 10}°C/  
+                            &nbsp;오전
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[16].weather[0].icon+".png"} alt="profile"/>
+                            {Math.round((result.data.list[16].main.temp - 273.15) * 10) / 10}°C 
+                            &nbsp;&nbsp;&nbsp;오후 
+                            <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[20].weather[0].icon+".png"} alt="profile"/>
                             {Math.round((result.data.list[20].main.temp - 273.15) * 10) / 10}°C
                         </div>
-                        <div className="comment">{Comment((Math.round((result.data.list[16].main.temp - 273.15) * 10)/10), result.data.list[16].weather[0].id)}</div>
-                        <div className="comment">{Comment((Math.round((result.data.list[20].main.temp - 273.15) * 10)/10), result.data.list[20].weather[0].id)}</div>
+                        <div className="comment">오전: {Comment((Math.round((result.data.list[16].main.temp - 273.15) * 10)/10), result.data.list[16].weather[0].id)}</div>
+                        <div className="comment">오후: {Comment((Math.round((result.data.list[20].main.temp - 273.15) * 10)/10), result.data.list[20].weather[0].id)}</div>
                     </ResultWrap>
                 )}
 
