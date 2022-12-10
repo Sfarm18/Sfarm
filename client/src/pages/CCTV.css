@@ -1,7 +1,7 @@
 .container{
-    padding-left: 30%;
+    padding-left: 32%;
     width: 800px;
-    padding-top: 50px;
+    padding-top: 5%;
     padding-bottom:300px;
 }
 .head{
@@ -11,5 +11,5 @@
     width: 600px;
 }
 .CCTV{
-    width: 800px;
+    width: 820px;
 }
