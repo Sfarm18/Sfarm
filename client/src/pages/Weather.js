@@ -227,7 +227,7 @@ const ResultWrap = styled.div`
     font-size: 24px;
   }
   .temperature {
-    font-size: 45px;
+    font-size: 40px;
     margin-top: 8px;
   }
   .sky {
