@@ -12,3 +12,10 @@
 .head{
     width: 600px;
 }
+div.temperature{
+    font-size: 40px; 
+}
+.crop{
+    color: #8D8C8F;
+    font-size: 20px;
+}

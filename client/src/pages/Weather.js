@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
 import { useEffect } from 'react';
 import axios from 'axios';
+import './Weather.css'
 import Sidebar from '../components/Sidebar.js'
 import styled from 'styled-components';
 
 function Weather() {
     
-    const location = 'busan'; // 문자열
+    const location = 'Busan'; // 문자열
     const [result, setResult] = useState({}); // json 파일 객체
     const API_KEY = process.env.REACT_APP_WEATHER_KEY; // 각자 개인의 API KEY를 발급받아 사용해주세요. 
 
@@ -86,19 +87,19 @@ function Weather() {
             <Sidebar/>
             <AppWrap>
                 <div className="appContentWrap">
-                <h1 className='head'>날씨예보({location})</h1>
-                <h3>작물: 복숭아</h3>
+                <h1 className='head'>{location} 날씨예보</h1>
+                <div className='crop'>작물: 복숭아</div>
                 
 
                 {Object.keys(result).length !== 0 && (
                     <ResultWrap>
                         <div className="time">{Time(0)}</div>
-                        <div className="sky">
+                        <div className="temperature">  
+                            &nbsp;오전
                             <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[0].weather[0].icon+".png"} alt="profile"/>
+                            {Math.round((result.data.list[0].main.temp - 273.15) * 10) / 10}°C
+                            &nbsp;&nbsp;&nbsp;오후                            
                             <img src = {"http://openweathermap.org/img/wn/"+ result.data.list[4].weather[0].icon+".png"} alt="profile"/>
-                        </div>
-                        <div className="temperature">
-                            {Math.round((result.data.list[0].main.temp - 273.15) * 10) / 10}°C/  
                             {Math.round((result.data.list[4].main.temp - 273.15) * 10) / 10}°C
                         </div>
                         <div className="comment">{Comment((Math.round((result.data.list[0].main.temp - 273.15) * 10)/10), result.data.list[0].weather[0].id)}</div>
